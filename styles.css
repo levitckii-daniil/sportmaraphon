@@ -291,6 +291,17 @@ main {
   box-shadow: inset 4px 0 0 #93cfcf;
 }
 
+.event--free {
+  background: rgba(255, 255, 255, 0.46);
+  box-shadow: inset 4px 0 0 #d7cbe1;
+}
+
+.event--free time,
+.event--free > span {
+  color: #82758a;
+  font-weight: 700;
+}
+
 .event-icon {
   display: inline-grid;
   flex: 0 0 auto;
@@ -332,6 +343,11 @@ main {
 .event-icon--relax {
   background: #eef8f8;
   border-color: #c9e5e5;
+}
+
+.event-icon--free {
+  background: #faf7fc;
+  border-color: #e1d7e8;
 }
 
 .timeline a {
