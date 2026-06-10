@@ -284,6 +284,10 @@ main {
   box-shadow: inset 4px 0 0 #94d2a0;
 }
 
+.event--activity {
+  box-shadow: inset 4px 0 0 #f0cf64;
+}
+
 .event--music {
   box-shadow: inset 4px 0 0 #e5a2ba;
 }
@@ -334,6 +338,11 @@ main {
 .event-icon--sport {
   background: #edf8ef;
   border-color: #cbe7d0;
+}
+
+.event-icon--activity {
+  background: #fff8dd;
+  border-color: #ead37a;
 }
 
 .event-icon--music {
@@ -643,6 +652,31 @@ main {
   background: linear-gradient(145deg, #fff 0%, #f3ebf8 100%);
 }
 
+.map-actions {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.map-preview {
+  display: block;
+  overflow: hidden;
+  margin-top: 1rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 1.4rem;
+  box-shadow: 0 12px 34px rgba(79, 54, 102, 0.08);
+}
+
+.map-preview img {
+  display: block;
+  width: 100%;
+  max-height: 38rem;
+  object-fit: contain;
+}
+
 .map-card h2 {
   margin: 0.65rem 0 0.75rem;
   font-size: clamp(1.65rem, 4vw, 3rem);
@@ -728,6 +762,11 @@ footer a {
   .map-card {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .map-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
